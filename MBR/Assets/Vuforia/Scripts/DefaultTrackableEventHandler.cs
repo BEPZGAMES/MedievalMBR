@@ -86,6 +86,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        var rigidbodiesComponents = GetComponentsInChildren<Rigidbody>(true);
 
         // Enable rendering:
         foreach (var component in rendererComponents)
@@ -98,6 +99,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+
+        // Enable rigidbody:
+        foreach (var component in rigidbodiesComponents)
+            component.isKinematic = false;
     }
 
 
@@ -106,6 +111,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
+        var rigidbodiesComponents = GetComponentsInChildren<Rigidbody>(true);
 
         // Disable rendering:
         foreach (var component in rendererComponents)
@@ -118,6 +124,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
+
+        // Disable rigidbody:
+        foreach (var component in rigidbodiesComponents)
+            component.isKinematic = true;
     }
 
     #endregion // PROTECTED_METHODS

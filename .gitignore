@@ -49,3 +49,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+MBR/Packages/manifest\.json
+
+MBR/ProjectSettings/ProjectVersion\.txt

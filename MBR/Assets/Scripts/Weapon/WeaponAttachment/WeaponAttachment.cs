@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosive : Weapon
+public abstract class WeaponAttachment : MonoBehaviour
 {
-    public float explotionTime;
-
+    public float price;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +17,8 @@ public class Explosive : Weapon
     {
         
     }
-    
-    void Throw(){
 
-    }
+    void Effect(){
 
-    IEnumerator Explode(){
-        yield return 0;
     }
 }

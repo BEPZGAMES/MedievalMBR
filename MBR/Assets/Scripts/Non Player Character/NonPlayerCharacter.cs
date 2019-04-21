@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class NonPlayerCharacter : MonoBehaviour
 {
+    public enum states {
+        homo,
+        noHomo
+    };
+    public bool walking;
+    public bool running;
+    public bool scared;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +22,9 @@ public class NonPlayerCharacter : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void ChangeState(states noHomo){
+
     }
 }

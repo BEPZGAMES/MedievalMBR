@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Consumable : MonoBehaviour
+public abstract class Consumable : MonoBehaviour
 {
+    public float price;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,10 @@ public class Consumable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    void Effect(){
         
     }
 }

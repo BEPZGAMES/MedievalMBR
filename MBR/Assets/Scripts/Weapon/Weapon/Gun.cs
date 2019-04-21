@@ -2,8 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gun : MonoBehaviour
+public abstract class Gun : Weapon
 {
+    public float accuracy;
+    public float fireRate;
+    public int ammunition;
+    public int currentAmo;
+    public int maxAmmo;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +21,16 @@ public class Gun : MonoBehaviour
     void Update()
     {
         
+    }
+    void Shoot(/*Bullet*/){
+
+    }
+
+    IEnumerator Reload(){
+        yield return 0;
+    }
+
+    IEnumerator ShootAnimation(){
+        yield return 0;
     }
 }

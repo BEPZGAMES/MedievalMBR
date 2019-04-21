@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosive : Weapon
+public class Sight : WeaponAttachment
 {
-    public float explotionTime;
+    public float accuracy;
+    public float maxRange;
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +18,8 @@ public class Explosive : Weapon
     {
         
     }
-    
-    void Throw(){
 
-    }
-
-    IEnumerator Explode(){
-        yield return 0;
+    void Effect(){
+        
     }
 }

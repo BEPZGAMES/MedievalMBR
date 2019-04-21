@@ -56,3 +56,6 @@ MBR/Packages/manifest.json
 
 MBR/ProjectSettings/ProjectVersion.txt
 
+**/manifest.json
+**/ProjectVersion.txt
+

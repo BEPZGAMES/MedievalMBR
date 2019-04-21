@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Vehicle : MonoBehaviour
+public abstract class Vehicle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float maxHp;  //En caso de que los vehiculos sean destruibles
+    public float hp;     //En caso de que los vehiculos sean destruibles
+    public float topSpeed;
+    public float currentSpeed;
+    public float acceleration;
+    public float handling;
+    public float price;
+    public float breaks;
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
